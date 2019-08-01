@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android.support.design="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/splashbg"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/logonew"
+        android:layout_gravity="center"
+        android:padding="10dp"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/email"
+        android.support.design:hintTextAppearance="@style/WhiteTextInputLayout"
+        android:textColorHint="#ffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:textColor="#ffffff"
+            android:theme="@style/Theme.App.Base"
+            android:hint="Enter your email id"
+            android:id="@+id/enter_email" />
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/pwd"
+        android.support.design:hintTextAppearance="@style/WhiteTextInputLayout"
+        android:textColorHint="#ffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="#ffffff"
+            android:ems="10"
+            android:hint="Enter your password"
+            android:theme="@style/Theme.App.Base"
+            android:id="@+id/enter_pwd" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#ff8f20"
+        android:text="Login"
+        android:id="@+id/login"
+        android:textColor="#fff" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:text="OR"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#ff8f20"
+        android:text="Sign Up"
+        android:id="@+id/signup"
+        android:textColor="#fff" />
+
+
+</LinearLayout>

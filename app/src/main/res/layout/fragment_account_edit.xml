@@ -1,0 +1,152 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android.support.design="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/iconbg"
+    tools:context="lokas.ngotrain.AccountEdit">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:background="@mipmap/iconbg"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/register"
+        android:layout_gravity="center"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manage Account"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:elevation="10dp"
+        android:focusable="false"
+        android:textColor="#319190"
+        android:textStyle="normal|bold"
+        android:textSize="33dp" />
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/full_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android.support.design:hintTextAppearance="@style/GreenTextInputLayout"
+                android:textColorHint="#319190"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/ereg_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Full Name"
+                    android:textColorHint="#319190"
+                    android:inputType="textPersonName" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/email_address"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android.support.design:hintTextAppearance="@style/GreenTextInputLayout"
+                android:textColorHint="#319190"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/ereg_email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Email Address"
+                    android:textColorHint="#319190"
+                    android:inputType="textEmailAddress" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/phone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android.support.design:hintTextAppearance="@style/GreenTextInputLayout"
+                android:textColorHint="#319190"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:ems="10"
+                    android:hint="Phone"
+                    android:textColorHint="#319190"
+                    android:id="@+id/ereg_pone" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+           <!-- <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="1"
+                android:layout_marginTop="16dp"
+                android:background="#b45705"
+                android:text="Update"
+                android:id="@+id/update"
+                android:textColor="#fff" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="1"
+                android:background="#b45705"
+                android:text="Cancel"
+                android:id="@+id/cancel"
+                android:textColor="#fff"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_horizontal" />-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="#319190"
+                android:text="Save"
+                android:id="@+id/update"
+                android:textColor="#fff" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="#319190"
+                android:text="Cancel"
+                android:id="@+id/cancel"
+                android:textColor="#fff"
+                android:layout_marginLeft="20dp" />-
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+</FrameLayout>

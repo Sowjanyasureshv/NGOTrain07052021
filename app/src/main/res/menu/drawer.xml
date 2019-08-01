@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navigation_item_attachment"
+            android:checked="true"
+            android:icon="@drawable/p_list"
+            android:title="@string/product_list" />
+        <item
+            android:id="@+id/navigation_item_images"
+            android:icon="@drawable/c_list"
+            android:title="@string/customer_list" />
+        <item
+            android:id="@+id/navigation_item_location"
+            android:icon="@drawable/prod_up"
+            android:title="@string/submit_product" />
+        <item
+            android:id="@+id/navigation_item_editacc"
+            android:icon="@drawable/edit_acc"
+            android:title="@string/edit_acc" />
+        <item
+            android:id="@+id/navigation_item_bids"
+            android:icon="@drawable/bid"
+            android:title="@string/ur_bids" />
+        <item
+            android:id="@+id/navigation_item_donor"
+            android:icon="@drawable/products"
+            android:title="@string/donor" />
+        <item
+            android:id="@+id/navigation_about"
+            android:checked="true"
+            android:icon="@drawable/about"
+            android:title="@string/aboutus" />
+        <item
+            android:id="@+id/navigation_item_log"
+            android:icon="@drawable/logout"
+            android:title="@string/logout" />
+        <!--<item
+            android:id="@+id/navigation_item_attachment"
+            android:checked="true"
+            android:icon="@drawable/ic_attachment"
+            android:title="@string/nav_item_attachment" />
+        <item
+            android:id="@+id/navigation_item_images"
+            android:icon="@drawable/ic_image"
+            android:title="@string/nav_item_images" />
+        <item
+            android:id="@+id/navigation_item_location"
+            android:icon="@drawable/ic_place"
+            android:title="@string/nav_item_location" />-->
+    </group>
+
+    <!--<item android:title="@string/nav_sub_menu">
+        <menu>
+            <item
+                android:icon="@drawable/ic_emoticon"
+                android:title="@string/nav_sub_menu_item01" />
+            <item
+                android:icon="@drawable/ic_emoticon"
+                android:title="@string/nav_sub_menu_item02" />
+        </menu>
+    </item>
+    <item android:id="@+id/action_settings"
+        android:title="Web Search"
+        app:showAsAction="ifRoom" />-->
+</menu>

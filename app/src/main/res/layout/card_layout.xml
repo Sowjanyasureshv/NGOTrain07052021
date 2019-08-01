@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/prtitle"
+            android:textStyle="bold"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/prdesc"
+            android:textStyle="italic"
+            android:textSize="20sp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/prdate"
+            android:text="Posted On:"
+            android:textSize="20sp"
+            />
+
+        <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/map"
+            android:text="View Map"
+            android:textSize="18sp"
+            android:textColor="#1f0000"
+            android:textAlignment="center"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp" />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fabpd2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:clickable="true"
+                app:backgroundTint="@color/colorFab"
+                android:src="@drawable/zoom"
+                app:layout_anchorGravity="bottom|right|end" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fabpd1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:backgroundTint="@color/colorFab"
+                android:src="@drawable/want"
+                app:layout_anchorGravity="bottom|right|end"
+                android:layout_marginRight="28dp"
+                android:layout_marginEnd="28dp"
+                android:layout_alignTop="@+id/fabpd2"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fabpd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:backgroundTint="@color/colorFab"
+                android:src="@drawable/mapmarker"
+                app:layout_anchorGravity="bottom|right|end"
+                android:layout_alignTop="@+id/fabpd2"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

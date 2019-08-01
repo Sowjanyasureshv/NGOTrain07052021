@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <lokas.ngotrain.TouchImageView
+        android:id="@+id/imgDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:scaleType="fitXY"
+        android:layout_weight="1"
+        android:background="@android:color/black"/>
+
+    <!--<TextView
+        android:id="@+id/readMore"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:scrollHorizontally="true"
+        android:text="Read More.."
+        android:textColor="#F3D114"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        android:linksClickable="false" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/bannerButton" />-->
+</LinearLayout>
